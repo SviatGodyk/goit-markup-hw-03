@@ -1,4 +1,14 @@
 /* ========== COMMON STYlES ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
@@ -11,9 +21,16 @@ a {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 button {
   cursor: pointer;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .section-title {
   color: #2e2f42;
@@ -21,8 +38,25 @@ button {
   line-height: 1.111;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 72px;
+}
+.section-paddings {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 /* ========== HEADER STYLES ========== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -31,9 +65,14 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-part {
   color: #2e2f42;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
 }
 .nav-link {
   color: #2e2f42;
@@ -42,6 +81,8 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -49,6 +90,11 @@ button {
 }
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 .address-link {
   color: #434455;
@@ -63,14 +109,22 @@ button {
 /* ========== HERO STYLES ========== */
 .hero {
   background-color: #2e2f42;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
+
 .main-title {
   color: #fff;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
+  display: block;
 }
 .order-service-btn {
   color: #fff;
@@ -79,6 +133,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   background: #4d5ae5;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
 }
 .order-service-btn:hover,
 .order-service-btn:focus {
@@ -86,12 +146,26 @@ button {
   color: #fff;
 }
 /* ========== BENEFITS STYLES ========== */
+.section-title-hidden {
+  display: none;
+}
+.benefits-list {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  align-items: center;
+  display: flex;
+  gap: 24px;
+}
+.benefits-list-item {
+  width: calc((100% - 72px) / 4);
+}
 .title-benefits {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .benefits-list-text {
   color: #434455;
@@ -111,8 +185,21 @@ button {
   text-transform: capitalize;
   text-align: center;
 }
+.team-list {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 32px;
+}
 .team-list-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-list-avatar {
+  margin-bottom: 32px;
 }
 .team-fullname {
   color: #2e2f42;
@@ -121,6 +208,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-list-text {
   color: #434455;
@@ -128,6 +216,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 32px;
 }
 /* ========== PORTFOLIO STYLES ========== */
 .section-title {
@@ -138,6 +227,24 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  align-items: center;
+}
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+.container-info-portfolio {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
 }
 .portfolio-list-title {
   color: #2e2f42;
@@ -151,10 +258,15 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 8px auto 16px;
 }
 /* ========== FOOTER STYLES ========== */
 .footer {
   background-color: #2e2f42;
+}
+.container-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-footer {
   color: #4d5ae5;
@@ -164,6 +276,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .logo-part-footer {
   color: #f4f4fd;
@@ -173,4 +286,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 16px;
 }
