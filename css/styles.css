@@ -44,7 +44,7 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.images {
+.img {
   display: block;
 }
 /* ========== HEADER STYLES ========== */
@@ -190,6 +190,7 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -234,8 +235,7 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 72px;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
@@ -260,6 +260,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-list-text {
   color: #434455;
