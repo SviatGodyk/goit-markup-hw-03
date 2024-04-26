@@ -44,7 +44,7 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.img {
+img {
   display: block;
 }
 /* ========== HEADER STYLES ========== */
@@ -155,7 +155,7 @@ button {
   padding-bottom: 120px;
 }
 .visually-hidden {
-  display: none;
+  overflow: hidden;
 }
 .benefits-list {
   align-items: center;
